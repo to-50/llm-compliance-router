@@ -1,8 +1,7 @@
-*Thinking...*
 
-> Ah, I see — they want the firewall and readback schema formatted as plain text prompt sections that can be injected directly into the `<mimic>` template, not as formal JSON schemas. I need to rewrite both as concise, token-efficient prose blocks that fit that prompt-native style. Writing the spec containers... Defining the firewall rules with precedence order: user instructions override everything, then hard constraints, then adapter mechanics, then contextual entries. Two repair passes maximum before reporting violations. The universal rules block certain rhetorical patterns like "not just X, but Y" constructions and temporal scene-setting in opening sentences. Checking intensifier frequency, parallel structure limits, and heading consistency across the artifact. Also verifying that sentence length varies enough and that conclusions add new claims rather than just restating earlier points. Used to extend metaphors across multiple domains, which violates the constraint. Then I'm mapping out the template track for structural replication, where I need to flag verbatim strings over six words and ensure extracted mechanics describe failure conditions rather than qualities. I'm also planning the readback block to display the rendered layout with caps, mode behavior, and rules, then wiring everything together while referencing framework entries by ID.
+ they want the firewall and readback schema formatted as plain text prompt sections that can be injected directly into the `<mimic>` template, not as formal JSON schemas. I need to rewrite both as concise, token-efficient prose blocks that fit that prompt-native style. Writing the spec containers... Defining the firewall rules with precedence order: user instructions override everything, then hard constraints, then adapter mechanics, then contextual entries. Two repair passes maximum before reporting violations. The universal rules block certain rhetorical patterns like "not just X, but Y" constructions and temporal scene-setting in opening sentences. Checking intensifier frequency, parallel structure limits, and heading consistency across the artifact. Also verifying that sentence length varies enough and that conclusions add new claims rather than just restating earlier points. Used to extend metaphors across multiple domains, which violates the constraint. Then I'm mapping out the template track for structural replication, where I need to flag verbatim strings over six words and ensure extracted mechanics describe failure conditions rather than qualities. I'm also planning the readback block to display the rendered layout with caps, mode behavior, and rules, then wiring everything together while referencing framework entries by ID.
 
-Right — the previous pass compiled them as engineering specs (JSON records, provenance enums, derived fields). That form is unusable as prompt text: it costs ~3,000 tokens and asks the model to maintain state it has no way to persist. Below is the same logic recompiled as two injectable containers, sized for a prompt body.
+the previous pass compiled them as engineering specs (JSON records, provenance enums, derived fields). That form is unusable as prompt text: it costs ~3,000 tokens and asks the model to maintain state it has no way to persist. Below is the same logic recompiled as two injectable containers, sized for a prompt body.
 
 Two changes worth flagging before the blocks. First, the firewall now injects **twice** — once governing Mimic's own output, once reproduced verbatim inside the compiled downstream prompt, since the downstream model is the one actually writing slides. Second, entry IDs survive the compression, because `BOUNDS TRIPPED` needs something to name.
 
@@ -196,8 +195,6 @@ PROPOSALS                         [opt-in, default out]
 ````
 
 ---
-
-## Wiring into your prompt
 
 Four edits:
 
