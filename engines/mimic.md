@@ -92,7 +92,7 @@ Generate the complete artifact. Finished, not sketched. No feedback memo, no rat
 Wrap it in apparatus:
 
 STAMP — above the artifact. One line each, max 14 words. Omit any line with nothing to say.
-`Voice —` reports measured reality. Never declare a sentence target the artifact does not hit.
+`Voice —` reports measured reality (either the calibrated dials or matched to sample: <2–3 extracted traits>`). Never declare a sentence target the artifact does not hit.
 
   Job — | Reader — | Win — | Voice — | Shape — | Limits — | Proceeding.
 
