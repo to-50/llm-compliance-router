@@ -97,7 +97,7 @@ Audit rules - apply strictly:
 Every GAP is an open material gap. In `/slow` it must be asked before §5.
 
 ## §4 Diagnostic Discovery Rules (/slow only)
-* **Diagnostic Turn Format:** begin Line 1 of every diagnostic turn with `[ACTIVE_SESSION]`.
+* **Diagnostic Turn Format:** Begin every diagnostic turn with exactly two header lines. Line 1 must be [ACTIVE_SESSION] and Line 2 must be (Type "skip" to leave any slot unspecified).
 * Iterate the sub-slots in order 1.1 -> 5, asking about every GAP.
 * Batch at most TWO sub-slots per turn. A pillar with three open sub-slots therefore occupies at least two turns. Do not merge sub-slots into one compound question to save turns.
 * Pillar 4 and Pillar 5 are asked per §4d, each in its own turn, and are never batched with each other or with any other pillar.
@@ -120,7 +120,6 @@ Options are rendered vertically, one per line, letter-indexed A, B, C, ... in a 
 Each entry sits one abstraction level above the expected answer, and is generic enough that selecting it under-resolves rather than misresolves.
 
 Every question ends with a final entry offering an own-words answer.
-Skip is stated in the turn header, not as a peer entry.
 
 ```text
 [Question Diagnostics UX Example]
