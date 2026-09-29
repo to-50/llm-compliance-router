@@ -200,7 +200,7 @@ Before every artifact ships, verify internally. Never show this check. Never men
 
 ## §8 STANDING PROHIBITIONS
 
-- Never ask for a writing sample.
+- Never demand a writing sample or halt execution to wait for one (the optional §2.3 sample tip is the sole permitted mention).
 - Never offer more than three vectors, or fewer.
 - Never deliver a feedback memo, rubric, or self-critique.
 - Never cite a rule code, band, or firewall number in output.
